@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+  <title>Conecta Aí Cananéia</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/detalhes.css">
+  <link rel="stylesheet" href="css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="css/remixicon.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="view view-main">
+
+      <!-- TAB BAR -->
+      <div id="menuPrincipal" class="toolbar toolbar-bottom">
+        <div class="toolbar-inner display-flex">
+          <a href="/index/" class="tab-link link active">
+            <i class="ri-home-line"></i><span>Home</span>
+          </a>
+          <a href="/link2/" class="tab-link link">
+            <i class="ri-road-map-fill"></i></i><span>Passeios</span>
+          </a>
+          <a href="/link3/" class="tab-link link">
+            <i class="ri-restaurant-line"></i><span>Restaurantes</span>
+          </a>
+          <a href="/link3/" class="tab-link link">
+            <i class="ri-home-heart-line"></i><span>Pousadas</span>
+          </a>
+          <a href="/link4/" class="tab-link link">
+            <i class="ri-star-line"></i><span>Cultura</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- PÁGINA INICIAL -->
+      <div data-name="index" class="page color-theme-blue">
+
+        <!-- TOPO -->
+        <div class="top-nav">
+            <h1 class="title-logo">Conecta Aí Cananéia</h1>
+            <img src="img/logo.png" alt="Logo" class="logo-topo">
+          </div>
+
+        <!-- BARRA DE BUSCA -->
+        <form>
+          <input placeholder="O que você procura?" type="text">
+          <i class="icone-busca ri-search-2-line"></i>
+        </form>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <div class="page-content">
+          <div class="block no margin-top">
+
+            <!-- SWIPER PRINCIPAL -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="img-fluid" src="img/background-1.png" alt=""></div>
+                <div class="swiper-slide"><img class="img-fluid" src="img/background-2.png" alt=""></div>
+                <div class="swiper-slide"><img class="img-fluid" src="img/background-3.png" alt=""></div>
+                <div class="swiper-slide"><img class="img-fluid" src="img/background-4.png" alt=""></div>
+                <div class="swiper-slide"><img class="img-fluid" src="img/background-5.png" alt=""></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- TÍTULO DAS CATEGORIAS -->
+            <div class="display-flex align-items-center justify-content-space-between">
+              <h2>Categorias</h2>
+              <a href="#" class="link-verde">Veja todos <i class="mdi mdi-arrow-right"></i></a>
+            </div>
+
+            <!-- SWIPER DE CATEGORIAS -->
+            <div class="swiper categorias">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><button class="filter-btn active">Todas</button></div>
+                <div class="swiper-slide"><button class="filter-btn active">Pousadas</button></div>
+                <div class="swiper-slide"><button class="filter-btn active">Passeios</button></div>
+                <div class="swiper-slide"><button class="filter-btn active">Restaurantes</button></div>
+                <div class="swiper-slide"><button class="filter-btn active">Cultura</button></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- LISTAGEM DE PRODUTOS -->
+            <div id="produtos" class="row display-flex align-items-center justify-content-start margin-top">
+              <!-- ITEM CARD 1 -->
+              <div class="item-card">
+                <a href="/detalhes/" class="item">
+                  <div class="img-container">
+                    <img src="img/Praia de Pereirinha.png" alt="Imagem do produto">
+                  </div>
+                  <div class="nome-rating">
+                    <span class="color-gray">Praia de Pereirinha</span>
+                    <span class="bold margin-right"></span>
+                    <span><i class="mdi mdi-star"></i> 4.9</span>
+                  </div>
+                    <div class="price">Acesso Livre</div>
+                 
+                </a>
+              </div>
+
+              <!-- ITEM CARD 2 -->
+              <div class="item-card">
+                <a href="/detalhes/" class="item">
+                  <div class="img-container">
+                    <img src="img/Hotel Costa Azul.png" alt="Imagem do produto">
+                  </div>
+                  <div class="nome-rating">
+                    <span class="color-gray">Hotel Costa Azul</span>
+                    <span class="bold margin-right"></span>
+                    <span><i class="mdi mdi-star"></i> 4.9</span>
+                  </div>
+                    <div class="price">R$ 397</div>
+                 
+                </a>
+              </div>
+<!-- ITEM CARD 3 -->
+<div class="item-card">
+    <a href="/detalhes/" class="item">
+      <div class="img-container">
+        <img src="img/Pousada Via Maria.png" alt="Imagem do produto">
+      </div>
+      <div class="nome-rating">
+        <span class="color-gray">Pousada Via Maria</span>
+        <span class="bold margin-right"></span>
+        <span><i class="mdi mdi-star"></i> 4.9</span>
+      </div>
+        <div class="price">R$ 290</div>
+     
+    </a>
+  </div>
+
+  <!-- ITEM CARD 4 -->
+<div class="item-card">
+    <a href="/detalhes/" class="item">
+      <div class="img-container">
+        <img src="img/Espetinhos Beira Mar.png" alt="Imagem do produto">
+      </div>
+      <div class="nome-rating">
+        <span class="color-gray">Espetinhos Beira Mar</span>
+        <span class="bold margin-right"></span>
+        <span><i class="mdi mdi-star"></i> 4.9</span>
+      </div>
+        <div class="price">R$ 90</div>
+     
+    </a>
+  </div>
+
+  <!-- ITEM CARD 5 -->
+<div class="item-card">
+    <a href="/detalhes/" class="item">
+      <div class="img-container">
+        <img src="img/Igreja Matriz.png" alt="Imagem do produto">
+      </div>
+      <div class="nome-rating">
+        <span class="color-gray">Igreja Matriz</span>
+        <span class="bold margin-right"></span>
+        <span><i class="mdi mdi-star"></i> 4.9</span>
+      </div>
+        <div class="price">R$ 310</div>
+     
+    </a>
+  </div>
+
+  <!-- ITEM CARD -->
+<div class="item-card">
+    <a href="/detalhes/" class="item">
+      <div class="img-container">
+        <img src="img/Ponto das Ostras.png" alt="Imagem do produto">
+      </div>
+      <div class="nome-rating">
+        <span class="color-gray">Ponto das Ostras</span>
+        <span class="bold margin-right"></span>
+        <span><i class="mdi mdi-star"></i> 4.9</span>
+      </div>
+        <div class="price">R$ 60</div>
+     
+    </a>
+  </div>
+
+   <!-- ITEM CARD -->
+<div class="item-card">
+    <a href="/detalhes/" class="item">
+      <div class="img-container">
+        <img src="img/Cachoeira do Pitú.png" alt="Imgem do produto">
+      </div>
+      <div class="nome-rating">
+        <span class="color-gray">Cachoeira do Pitú</span>
+        <span class="bold margin-right"></span>
+        <span><i class="mdi mdi-star"></i> 4.9</span>
+      </div>
+        <div class="price">R$ 60</div>
+     
+    </a>
+  </div>
+
+   <!-- ITEM CARD -->
+<div class="item-card">
+    <a href="/detalhes/" class="item">
+      <div class="img-container">
+        <img src="img/Museu Municipal de Cananeia.png" alt="Imagem do produto">
+      </div>
+      <div class="nome-rating">
+        <span class="color-gray">Museu Municipal de Cananéia</span>
+        <span class="bold margin-right"></span>
+        <span><i class="mdi mdi-star"></i> 4.9</span>
+      </div>
+        <div class="price">R$ 0</div>
+     
+    </a>
+  </div>
+
+   <!-- ITEM CARD -->
+<div class="item-card">
+    <a href="/detalhes/" class="item">
+      <div class="img-container">
+        <img src="img/Centro Histórico.png" alt="Imagem do produto">
+      </div>
+      <div class="nome-rating">
+        <span class="color-gray">Centro Histórico</span>
+        <span class="bold margin-right"></span>
+        <span><i class="mdi mdi-star"></i> 4.9</span>
+      </div>
+        <div class="price">R$ 0</div>
+     
+    </a>
+  </div>
+
+   <!-- ITEM CARD -->
+<div class="item-card">
+    <a href="/detalhes/" class="item">
+      <div class="img-container">
+        <img src="img/Ponto das Ostras.png" alt="Imagem do produto">
+      </div>
+      <div class="nome-rating">
+        <span class="color-gray">Ponto das Ostras</span>
+        <span class="bold margin-right"></span>
+        <span><i class="mdi mdi-star"></i> 4.9</span>
+      </div>
+        <div class="price">R$ 60</div>
+     
+    </a>
+  </div>
+
+  <!-- ITEM CARD -->
+<div class="item-card">
+    <a href="/detalhes/" class="item">
+      <div class="img-container">
+        <img src="img/Via Maria Bistrô.png" alt="Imagem do produto">
+      </div>
+      <div class="nome-rating">
+        <span class="color-gray">Via Maria Bistrô</span>
+        <span class="bold margin-right"></span>
+        <span><i class="mdi mdi-star"></i> 4.9</span>
+      </div>
+        <div class="price">R$ 120</div>
+     
+    </a>
+  </div>
+
+
+              <!-- ITEM CARD -->
+              <div class="item-card">
+                <a href="/detalhes/" class="item">
+                  <div class="img-container">
+                    <img src="img/Hotel Marazul.png" alt="Imagem do produto">
+                  </div>
+                  <div class="nome-rating">
+                    <span class="color-gray">Hotel Marazul</span>
+                    <span class="bold margin-right">
+                    </span>
+                    <span><i class="mdi mdi-star"></i> 4.9</span>
+                  </div>
+                    <div class="price">R$ 397</div>
+                  </div>
+                </a>
+              </div>
+            </div> <!-- Fim produtos -->
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </div>
+          
+        </div> <!-- Fim page-content -->
+
+      </div> <!-- Fim página -->
+
+    </div> <!-- view-main -->
+  </div> <!-- app -->
+
+  <!-- JS -->
+  <script src="lib/framework7-bundle.min.js"></script>
+  <script src="lib/jquery-3.7.0.min.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="cordova.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
